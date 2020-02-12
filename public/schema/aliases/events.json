@@ -1,0 +1,33 @@
+{
+    "title": "",
+    "type": "object",
+    "required": [
+        "verb",
+        "alias",
+        "display"
+    ],
+    "properties": {
+        "tenantId": {
+            "type": "string"
+        },
+        "verb": {
+            "title": "Verb",
+            "type": "string",
+            "maxLength": 99
+        },
+        "alias": {
+            "title": "Alias",
+            "type": "string",
+            "maxLength": 99
+        },
+        "display": {
+            "title": "Display",
+            "type": "boolean",
+            "default": true,
+            "enumNames": [
+                "Yes",
+                "No"
+            ]
+        }
+    }
+}

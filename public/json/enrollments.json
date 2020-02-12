@@ -1,0 +1,30 @@
+[
+    {
+        "sourcedId": "temp@temp.edu",
+        "status": "active",
+        "metadata": null,
+        "role": "teacher",
+        "primary": false,
+        "user": {
+            "sourcedId": "temp@temp.edu",
+            "status": null,
+            "metadata": null,
+            "username": null,
+            "userId": null,
+            "givenName": null,
+            "familyName": null,
+            "role": null,
+            "identifier": null,
+            "email": null,
+            "sms": null,
+            "phone": null
+        },
+        "class": {
+            "sourcedId": "testclass",
+            "status": null,
+            "metadata": null,
+            "title": null,
+            "course": null
+        }
+    }
+]

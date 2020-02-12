@@ -1,0 +1,27 @@
+{
+    "labels": ["NavigatedTo", "Viewed"],
+    "datasets": [
+        {
+            "label": "Total",
+            "data": [
+                1.0931174089068827,
+                0.29411764705882354
+            ],
+            "backgroundColor": [
+                "rgba(6, 11, 178, 0.5)",
+                "rgba(84, 255, 0, 0.5)"
+            ]
+        },
+        {
+            "label": "Class Average",
+            "data": [
+                1,
+                1
+            ],
+            "backgroundColor": [
+                "rgba(135, 135, 135, 0.7)",
+                "rgba(135, 135, 135, 0.7)"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "title": "",
+    "description": "",
+    "type": "object",
+    "required": [
+        "name"
+    ],
+    "properties": {
+        "name": {
+            "title": "Name",
+            "type": "string",
+            "maxLength": 99
+        },
+        "description": {
+            "title": "Description",
+            "type": "string",
+            "maxLength": 99
+        },
+        "idpEndpoint": {
+            "title": "IDP Endpoint",
+            "type": "string",
+            "format": "url"
+        }
+    }
+}

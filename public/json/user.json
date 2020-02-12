@@ -1,0 +1,216 @@
+[
+    {
+        "providerConfiguration": {
+            "options": [
+                {
+                    "key": "key",
+                    "defaultValue": null,
+                    "type": "text",
+                    "label": "Key",
+                    "translatableLabelKey": "LABEL_KEY",
+                    "encrypt": true,
+                    "required": true
+                },
+                {
+                    "key": "secret",
+                    "defaultValue": null,
+                    "type": "password",
+                    "label": "Secret",
+                    "translatableLabelKey": "LABEL_SECRET",
+                    "encrypt": true,
+                    "required": true
+                },
+                {
+                    "key": "base_url",
+                    "defaultValue": null,
+                    "type": "url",
+                    "label": "Matthews Base URL",
+                    "translatableLabelKey": "LABEL_MATTHEWS_BASE_URL",
+                    "encrypt": false,
+                    "required": true
+                }
+            ]
+        },
+        "desc": "MATTHEWS_USER_DESC",
+        "name": "MATTHEWS_USER_NAME",
+        "key": "user_matthews",
+        "defaultMatthewsConfiguration": {
+            "options": [
+                {
+                    "key": "key",
+                    "defaultValue": null,
+                    "type": "text",
+                    "label": "Key",
+                    "translatableLabelKey": "LABEL_KEY",
+                    "encrypt": true,
+                    "required": true
+                },
+                {
+                    "key": "secret",
+                    "defaultValue": null,
+                    "type": "password",
+                    "label": "Secret",
+                    "translatableLabelKey": "LABEL_SECRET",
+                    "encrypt": true,
+                    "required": true
+                },
+                {
+                    "key": "base_url",
+                    "defaultValue": null,
+                    "type": "url",
+                    "label": "Matthews Base URL",
+                    "translatableLabelKey": "LABEL_MATTHEWS_BASE_URL",
+                    "encrypt": false,
+                    "required": true
+                }
+            ]
+        }
+    },
+    {
+        "providerConfiguration": {
+            "options": [
+                {
+                    "key": "key",
+                    "defaultValue": null,
+                    "type": "text",
+                    "label": "LABEL_JDBCCONNECTOR",
+                    "translatableLabelKey": "Jdbc Connector",
+                    "encrypt": true,
+                    "required": true
+                },
+                {
+                    "key": "myDriver",
+                    "defaultValue": null,
+                    "type": "text",
+                    "label": "LABEL_JDBCDRIVER",
+                    "translatableLabelKey": "Jdbc Driver (eg: org.netezza.Driver) ",
+                    "encrypt": true,
+                    "required": true
+                },
+                {
+                    "key": "server",
+                    "defaultValue": null,
+                    "type": "text",
+                    "label": "LABEL_JDBCSERVER",
+                    "translatableLabelKey": "Server",
+                    "encrypt": true,
+                    "required": true
+                },
+                {
+                    "key": "port",
+                    "defaultValue": null,
+                    "type": "text",
+                    "label": "LABEL_JDBCPORT",
+                    "translatableLabelKey": "Port",
+                    "encrypt": true,
+                    "required": true
+                },
+                {
+                    "key": "databaseName",
+                    "defaultValue": null,
+                    "type": "text",
+                    "label": "LABEL_JDBCDATABASENAME",
+                    "translatableLabelKey": "Database Name",
+                    "encrypt": true,
+                    "required": true
+                },
+                {
+                    "key": "userName",
+                    "defaultValue": null,
+                    "type": "text",
+                    "label": "LABEL_JDBCUSERNAME",
+                    "translatableLabelKey": "User Name",
+                    "encrypt": true,
+                    "required": true
+                },
+                {
+                    "key": "password",
+                    "defaultValue": null,
+                    "type": "password",
+                    "label": "LABEL_JDBCPASSWORD",
+                    "translatableLabelKey": "Password",
+                    "encrypt": true,
+                    "required": true
+                }
+            ]
+        },
+        "desc": "JDBC_USER_DESC",
+        "name": "JDBC_USER_NAME",
+        "key": "user_jdbc",
+        "defaultJdbcConfiguration": {
+            "options": [
+                {
+                    "key": "key",
+                    "defaultValue": null,
+                    "type": "text",
+                    "label": "LABEL_JDBCCONNECTOR",
+                    "translatableLabelKey": "Jdbc Connector",
+                    "encrypt": true,
+                    "required": true
+                },
+                {
+                    "key": "myDriver",
+                    "defaultValue": null,
+                    "type": "text",
+                    "label": "LABEL_JDBCDRIVER",
+                    "translatableLabelKey": "Jdbc Driver (eg: org.netezza.Driver) ",
+                    "encrypt": true,
+                    "required": true
+                },
+                {
+                    "key": "server",
+                    "defaultValue": null,
+                    "type": "text",
+                    "label": "LABEL_JDBCSERVER",
+                    "translatableLabelKey": "Server",
+                    "encrypt": true,
+                    "required": true
+                },
+                {
+                    "key": "port",
+                    "defaultValue": null,
+                    "type": "text",
+                    "label": "LABEL_JDBCPORT",
+                    "translatableLabelKey": "Port",
+                    "encrypt": true,
+                    "required": true
+                },
+                {
+                    "key": "databaseName",
+                    "defaultValue": null,
+                    "type": "text",
+                    "label": "LABEL_JDBCDATABASENAME",
+                    "translatableLabelKey": "Database Name",
+                    "encrypt": true,
+                    "required": true
+                },
+                {
+                    "key": "userName",
+                    "defaultValue": null,
+                    "type": "text",
+                    "label": "LABEL_JDBCUSERNAME",
+                    "translatableLabelKey": "User Name",
+                    "encrypt": true,
+                    "required": true
+                },
+                {
+                    "key": "password",
+                    "defaultValue": null,
+                    "type": "password",
+                    "label": "LABEL_JDBCPASSWORD",
+                    "translatableLabelKey": "Password",
+                    "encrypt": true,
+                    "required": true
+                }
+            ]
+        }
+    },
+    {
+        "desc": "OD_DEMO_USER_DESC",
+        "providerConfiguration": {
+            "options": []
+        },
+        "name": "OD_DEMO_USER_NAME",
+        "key": "user_demo"
+    }
+]

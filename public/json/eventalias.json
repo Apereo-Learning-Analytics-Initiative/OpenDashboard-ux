@@ -1,0 +1,16 @@
+[
+    {
+        "id": "abc",
+        "tenantId": "5a26c53f31d90641031945fc",
+        "verb": "http://purl.imsglobal.org/vocab/caliper/v1/action#Submitted",
+        "alias": "http://purl.imsglobal.org/vocab/caliper/v1/action#Submittedhttp://purl.imsglobal.org/vocab/caliper/v1/action#Submitted",
+        "display": true
+    },
+    {
+        "id": "def",
+        "tenantId": "5a26c53f31d90641031945fc",
+        "verb": "loggedout",
+        "alias": "signed out",
+        "display": false
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "label": "NavigatedTo",
+        "event": "NavigatedTo"
+    },
+    {
+        "label": "Viewed",
+        "event": "Viewed"
+    }
+]

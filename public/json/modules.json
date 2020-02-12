@@ -1,0 +1,58 @@
+{
+    "Lines": [
+        {
+            "id": 1,
+            "order": 1,
+            "Modules": [
+                {
+                    "id": "module4",
+                    "order": 4,
+                    "configuration": {},
+                    "api": "/api/classes/{classId}/events/{userId}"
+                },
+                {
+                    "id": "module5",
+                    "order": 5,
+                    "configuration": {},
+                    "api": "/api/classes/{classId}/events/{userId}"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "order": 2,
+            "Modules": [
+                {
+                    "id": "module1",
+                    "order": 1,
+                    "configuration": {},
+                    "api": "/api/classes/{classId}/events/{userId}"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "order": 3,
+            "Modules": [
+                {
+                    "id": "module2",
+                    "order": 2,
+                    "configuration": {},
+                    "api": "/api/classes/{classId}/events/{userId}"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "order": 4,
+            "Modules": [
+                {
+                    "id": "module3",
+                    "order": 3,
+                    "configuration": {},
+                    "api": "/api/classes/{classId}/events/{userId}"
+                }
+            ]
+        }
+    ]
+}

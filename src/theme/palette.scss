@@ -1,0 +1,18 @@
+@import 'mixin';
+
+@function color($key) {
+  @return getFromMap($key, $palette);
+}
+
+$palette: (
+    white: #FFF,
+    light-grey: #f8f9fa,
+    dark-grey: #343a40,
+    offwhite: #F1F0EB,
+    blue-light: #b9c9d5,
+    bluegrey-lighter: #eaeff1,
+    bluegrey-light: #d5dEE2,
+    bluegrey-dark: #2c3841,
+    bluegrey-med: #00557f
+);
+

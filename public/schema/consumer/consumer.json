@@ -1,0 +1,15 @@
+{
+    "title": "",
+    "description": "",
+    "type": "object",
+    "required": [
+        "name"
+    ],
+    "properties": {
+        "name": {
+            "title": "Add new consumer",
+            "type": "string",
+            "maxLength": 99
+        }
+    }
+}

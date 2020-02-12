@@ -1,0 +1,20 @@
+@import 'palette';
+
+$primary: color(bluegrey-med);
+
+$body-bg: color(light-grey);
+$body-color: color(dark-grey);
+$link-color: color(dark-grey);
+
+$font-family-sans-serif: font(primary);
+$font-family-monospace: font(code);
+
+$table-accent-bg: color(bluegrey-lighter);
+$table-border-color: color(bluegrey-light);
+
+$header-bg-color: color(white);
+$footer-bg-color: color(dark-grey);
+$footer-text-color: color(white);
+
+$header-footer-text-color: color(white);
+$header-footer-link-color: color(blue-light);

@@ -1,0 +1,18 @@
+@import './mixin';
+
+@function image($key) {
+  @return getFromMap($key, $images);
+}
+
+@function font($key) {
+  @return getFromMap($key, $fonts);
+}
+
+$images: (
+    logo: ''
+);
+
+$fonts: (
+    primary: #{ "Open Sans", sans-serif },
+    code: #{ source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace }
+);

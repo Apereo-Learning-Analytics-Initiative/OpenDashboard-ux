@@ -1,0 +1,191 @@
+@import './theme/palette';
+@import './theme/brand';
+@import './theme/override';
+@import './theme/bootstrap';
+@import './theme/charts';
+
+body {
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    height: 100vh;
+    padding-top: 73px;
+}
+
+/* NEW SKIN */
+
+.header, .footer {
+    &.brand-header {
+        background: $header-bg-color;
+    }
+
+    &.brand-footer {
+        background: $footer-bg-color;
+        color: $footer-text-color;
+
+        a {
+            color: $header-footer-link-color;
+        }
+    }
+}
+
+.container {
+    max-width: 90%;
+}
+
+.app-logo {
+    width: auto;
+    height: 40px;
+}
+
+.btn-text {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: 0;
+    -webkit-appearance: none;
+    &:focus {
+        outline: 0;
+    }
+}
+
+.badge-lg {
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: 0.25rem;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid transparent;
+}
+
+.badge-high-risk {
+    $color: theme-color('danger');
+    background: $color;
+    color: color-yiq($color);
+}
+
+.badge-medium-risk {
+    $color: theme-color('warning');
+    background: $color;
+    color: color-yiq($color);
+}
+
+.badge-no-risk {
+    $color: theme-color('success');
+    background: $color;
+    color: color-yiq($color);
+}
+
+.badge-invalid-risk {
+    $color: theme-color('secondary');
+    background: $color;
+    color: color-yiq($color);
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.w-33 {
+    width: 33%;
+}
+
+.card {
+    position: static;
+}
+
+.dropdown-item {
+    &:focus {
+        outline: 0;
+    }
+}
+
+.date-picker-form .react-datepicker-wrapper {
+    max-width: 120px;
+
+    
+}
+
+.error-detail {
+    list-style: none;
+    padding: 0;
+    font-size: 0.75rem;
+    padding: 0.25rem;
+}
+
+.field-object {
+    margin-bottom: 0;
+}
+
+.text-lg {
+    font-size: 1rem;
+}
+
+.text-xl {
+    font-size: 1.15rem;
+}
+
+i.glyphicon { display: none; }
+.btn-add::after { content: 'Add'; }
+.array-item-move-up::after { content: 'Move Up'; }
+.array-item-move-down::after { content: 'Move Down'; }
+.array-item-remove::after { content: 'Remove'; }
+
+.field-radio-group {
+    display: flex;
+
+    .radio {
+        margin-right: 16px;
+
+        input {
+            margin-right: 4px;
+        }
+    }
+}
+
+
+/* OLD */
+
+
+.login-view {
+    background: url(/images/stairs-people-sitting-architecture.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+a.link-lg, button.link-lg {
+    font-size: 1.4rem;
+}
+
+thead.head-sm {
+    font-size: 0.8rem;
+}
+
+.timeline-heading {
+    width: 60%;
+}
+
+.ml-50 {
+    margin-left: 50%;
+}
+
+.table-align-middle {
+    tbody td {
+        vertical-align: middle;
+    }
+}
+
+.data-module-content {
+    position: relative;
+    // height: 300px;
+}
+
+@media screen and (max-width: 991.99px) {
+    .chart-card-deck .card:not(:first-child) {
+        margin-top: 1rem;
+    }
+}

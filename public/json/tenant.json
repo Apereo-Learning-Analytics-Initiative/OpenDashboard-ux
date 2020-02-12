@@ -1,0 +1,166 @@
+{
+    "id": "5a26c53f31d90641031945fc",
+    "name": "DEFAULT_TENANT",
+    "description": "default",
+    "idpEndpoint": "http://test.com",
+    "consumers": [
+        {
+            "id": "b01810a0-b94a-4152-bcf9-cde5eac28e68",
+            "name": "Moodle",
+            "oauthConsumerKey": "a99542cc-1bf3-4875-a80a-d1284b9ab22c",
+            "oauthConsumerSecret": "a01799d0-60d4-43cb-bd0f-6e462f3b146b"
+        }
+    ],
+    "providerData": [
+        {
+            "id": null,
+            "providerType": "ROSTER",
+            "providerKey": "roster_matthews",
+            "options": [
+                {
+                    "key": "key",
+                    "value": "8c212740-bc79-426f-92e2-e9f6b8c020df",
+                    "required": true,
+                    "encrypt": true
+                },
+                {
+                    "key": "secret",
+                    "value": "20120ea3-4e05-4d21-9ade-a928468c3daa",
+                    "required": true,
+                    "encrypt": true
+                },
+                {
+                    "key": "base_url",
+                    "value": "https://lap-lrw.temp.edu",
+                    "required": true,
+                    "encrypt": true
+                }
+            ]
+        },
+        {
+            "id": null,
+            "providerType": "EVENT",
+            "providerKey": "events_matthews",
+            "options": [
+                {
+                    "key": "base_url",
+                    "value": "https://lap-lrw.temp.edu",
+                    "required": true,
+                    "encrypt": true
+                },
+                {
+                    "key": "secret",
+                    "value": "20120ea3-4e05-4d21-9ade-a928468c3daa",
+                    "required": true,
+                    "encrypt": true
+                },
+                {
+                    "key": "key",
+                    "value": "8c212740-bc79-426f-92e2-e9f6b8c020df",
+                    "required": true,
+                    "encrypt": true
+                }
+            ]
+        },
+        {
+            "id": null,
+            "providerType": "LINEITEM",
+            "providerKey": "lineitem_matthews",
+            "options": [
+                {
+                    "key": "base_url",
+                    "value": "https://lap-lrw.temp.edu",
+                    "required": true,
+                    "encrypt": true
+                },
+                {
+                    "key": "secret",
+                    "value": "20120ea3-4e05-4d21-9ade-a928468c3daa",
+                    "required": true,
+                    "encrypt": true
+                },
+                {
+                    "key": "key",
+                    "value": "8c212740-bc79-426f-92e2-e9f6b8c020df",
+                    "required": true,
+                    "encrypt": true
+                }
+            ]
+        },
+        {
+            "id": null,
+            "providerType": "USER",
+            "providerKey": "user_matthews",
+            "options": [
+                {
+                    "key": "base_url",
+                    "value": "https://lap-lrw.temp.edu",
+                    "required": true,
+                    "encrypt": true
+                },
+                {
+                    "key": "key",
+                    "value": "8c212740-bc79-426f-92e2-e9f6b8c020df",
+                    "required": true,
+                    "encrypt": true
+                },
+                {
+                    "key": "secret",
+                    "value": "20120ea3-4e05-4d21-9ade-a928468c3daa",
+                    "required": true,
+                    "encrypt": true
+                }
+            ]
+        },
+        {
+            "id": null,
+            "providerType": "COURSE",
+            "providerKey": "course_matthews",
+            "options": [
+                {
+                    "key": "key",
+                    "value": "8c212740-bc79-426f-92e2-e9f6b8c020df",
+                    "required": true,
+                    "encrypt": true
+                },
+                {
+                    "key": "secret",
+                    "value": "20120ea3-4e05-4d21-9ade-a928468c3daa",
+                    "required": true,
+                    "encrypt": true
+                },
+                {
+                    "key": "base_url",
+                    "value": "https://lap-lrw.temp.edu",
+                    "required": true,
+                    "encrypt": true
+                }
+            ]
+        },
+        {
+            "id": null,
+            "providerType": "MODELOUTPUT",
+            "providerKey": "modeloutput_matthews",
+            "options": [
+                {
+                    "key": "secret",
+                    "value": "20120ea3-4e05-4d21-9ade-a928468c3daa",
+                    "required": true,
+                    "encrypt": true
+                },
+                {
+                    "key": "key",
+                    "value": "8c212740-bc79-426f-92e2-e9f6b8c020df",
+                    "required": true,
+                    "encrypt": true
+                },
+                {
+                    "key": "base_url",
+                    "value": "https://lap-lrw.temp.edu",
+                    "required": true,
+                    "encrypt": true
+                }
+            ]
+        }
+    ]
+}
