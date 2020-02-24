@@ -9,7 +9,7 @@ export function BrandFooter() {
                 </a>
             </div>
             <div className="footer-copyright ml-2">
-                <span className="print-only">©2016 Jisc.</span>
+                <span className="print-only">©2020 Apereo Foundation. &nbsp;</span>
                 This work is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.0/uk/">CC BY-NC-SA 4.0</a>
             </div>
         </footer>
