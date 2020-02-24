@@ -1,24 +1,28 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# OpenDashboard UX
 
-## required
-npm 6.10.2
-node 12.9.0
+
+## Required
+- [npm](https://www.npmjs.com/) ^6.10.2
+- [node](https://nodejs.org/en/) ^12.9.0
+- [react-scripts](https://www.npmjs.com/package/react-scripts) ^3.4.0
+
+
 For production environment, use 'serve':
 https://create-react-app.dev/docs/deployment/
 
-## configuration
-Note, if you edit the file src/shared/path.js in OpenDashboard-ux and chance DEV_MODE to true, you should be able to simply launch the app with false data to see it working.
+## Configuration
+Note, if you edit the file src/shared/path.js in OpenDashboard-ux and change `DEV_MODE` to true, you should be able to simply launch the app with false data to see it working.
 
-Edit public/config.json with the following information
-
-    {
-        "API_BASE_URL": "https://[YOUR OpenDahsboard-api url]/",
-        "logo": {
-            "url": "",
-            "imagePath": "[your url]"
-        }
+Edit `public/config.json` with the following setting
+```javascript 
+{
+    "API_BASE_URL": "https://[YOUR OpenDahsboard-api url]/",
+    "logo": {
+        "url": "",
+        "imagePath": "[your url]"
     }
-
+}
+```
 
 ## Available Scripts
 
