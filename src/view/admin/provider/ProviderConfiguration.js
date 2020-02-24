@@ -42,13 +42,15 @@ export function ProviderConfiguration({ match, updateTenant }) {
 
     const updateProviders = (provider) => {
         const updates = { ...tenant };
+
         if (!updates.providerData) { updates.providerData = []; }
         const indexOfProvider = findIndex(updates.providerData, (p) => p.providerType === provider.providerType);  
               
-        updates.providerData[indexOfProvider>-1?indexOfProvider:0] = provider;
-
-
-        console.log(updates);
+        if (indexOfProvider==-1) {
+            updates.providerData.push(provider);
+        } else {
+           updates.providerData[indexOfProvider] = provider;
+        }
         updateTenant(updates);
     };
 
