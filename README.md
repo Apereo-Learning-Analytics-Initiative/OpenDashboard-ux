@@ -16,7 +16,7 @@ Note, if you edit the file src/shared/path.js in OpenDashboard-ux and change `DE
 Edit `public/config.json` with the following setting
 ```javascript 
 {
-    "API_BASE_URL": "https://[YOUR OpenDahsboard-api url]/",
+    "API_BASE_URL": "https://[YOUR OpenDashboard-api url]/",
     "logo": {
         "url": "",
         "imagePath": "[your url]"
