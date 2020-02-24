@@ -1,7 +1,7 @@
 import useFetch from 'fetch-suspense';
 import { useAppConfig } from './config';
 
-export const DEV_MODE = true;
+export const DEV_MODE = false;
 
 export const API_URLS = {
     tenants: () => DEV_MODE ? `/json/tenantlist.json` : `api/tenant`,

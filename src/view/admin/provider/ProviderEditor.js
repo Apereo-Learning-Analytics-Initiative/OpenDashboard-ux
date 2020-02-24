@@ -24,10 +24,13 @@ function parseProviderData(config, provider) {
 }
 
 function formatProviderData(provider) {
+
+    const reducedOptions = provider&&provider.options?provider.options.reduce((coll, opt) => ({ ...coll, [opt.key]: opt.value }), {}):{};
+
     const formatted = provider ? {
         providerKey: provider.providerKey,
         providerType: provider.providerType,
-        ...provider.options.reduce((coll, opt) => ({ ...coll, [opt.key]: opt.value }), {})
+        ...reducedOptions
     } : {};
 
     return formatted;
@@ -47,12 +50,18 @@ function ProviderEditor({ history, definition, onSave, current }) {
     };
 
     const save = (form) => {
+
+        
+
         const provider = parseProviderData(definition.providerConfiguration, form.formData);
+
+        console.log(provider);
+
         onSave(provider);
     };
 
     React.useEffect(() => {
-        const current = tenant.providerData.find(p => p.providerKey === params.providerKey);
+        const current = tenant.providerData?tenant.providerData.find(p => p.providerKey === params.providerKey):{};
         setData({
             ...formatProviderData(current),
             providerKey: params.providerKey,

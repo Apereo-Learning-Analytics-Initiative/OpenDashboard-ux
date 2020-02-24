@@ -8,6 +8,7 @@ import { getMoment } from '../shared/util/date';
 import { useSelectors } from '../shared/hooks/useSelectors';
 import { useStudentEventUrl, usePulseDataUrl } from '../shared/path';
 import { DATA_DATE_FORMAT } from '../shared/constant';
+import { useCachedData } from '../charts/DataUtility';
 
 export const actions = {
     SELECT_CLASS: '[Course Context] Set Selected Class',
@@ -148,7 +149,11 @@ export function useCourseConfig() {
 }
 
 
-export function useStudentEvents() {
+export function useStudentEvents() {    
+
+    // TEST THIS GUY OUT
+//    return useCachedData(useStudentEventUrl(useSelectedClassId(), useSelectedStudentId()));
+
     return useFetch(
         useStudentEventUrl(useSelectedClassId(), useSelectedStudentId()),
         {

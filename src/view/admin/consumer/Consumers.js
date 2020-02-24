@@ -33,7 +33,7 @@ export function Consumers ({ updateTenant, tenant }) {
         const updates = {
             ...tenant,
             consumers: [
-                ...tenant.consumers,
+                ...tenant.consumers || [],
                 {
                     ...consumer,
                     id: createGuid(),
@@ -62,7 +62,8 @@ export function Consumers ({ updateTenant, tenant }) {
                                         body={`Generate key/secret combinations so that an LMS can access your system via an LTI Launch. Simply enter a name in the 'Add new consumer' textbox and select save.`}></InfoPopup>
                                 </CardHeader>
                 <ListGroup flush>
-                    {tenant.consumers.map((consumer, index) =>
+                
+                    {tenant.consumers && tenant.consumers.map((consumer, index) =>
                         <ListGroupItem key={index}>
                             <div className="d-flex justify-content-between">
                                 <h5>{consumer.name}</h5>

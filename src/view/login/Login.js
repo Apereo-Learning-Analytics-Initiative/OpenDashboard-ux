@@ -24,7 +24,7 @@ function Login({ history }) {
                 .then( (response) => {
                     if (response==="OK") {
                         console.log("login ok");
-                        history.push("/admin/tenants");
+                        window.location.assign("/admin/tenants");
                     } 
                     else {
                         console.log("failed login");

@@ -26,7 +26,7 @@ export function ProviderConfiguration({ match, updateTenant }) {
 
     const configs = configuration.map((config) => ({
         ...config,
-        isConfigured: providers.find(p => p.providerKey === config.key)
+        isConfigured: providers?providers.find(p => p.providerKey === config.key):false
     }));
 
     React.useEffect(() => {
@@ -43,8 +43,12 @@ export function ProviderConfiguration({ match, updateTenant }) {
     const updateProviders = (provider) => {
         const updates = { ...tenant };
         if (!updates.providerData) { updates.providerData = []; }
-        const indexOfProvider = findIndex(updates.providerData, (p) => p.providerType === provider.providerType);
-        updates.providerData[indexOfProvider || 0] = provider;
+        const indexOfProvider = findIndex(updates.providerData, (p) => p.providerType === provider.providerType);  
+              
+        updates.providerData[indexOfProvider>-1?indexOfProvider:0] = provider;
+
+
+        console.log(updates);
         updateTenant(updates);
     };
 
