@@ -2,6 +2,6 @@
     "API_BASE_URL": "http://localhost:8081/",
     "logo": {
         "url": "",
-        "imagePath": "/images/nc-state-logo.png"
+        "imagePath": "/images/logo.png"
     }
 }
