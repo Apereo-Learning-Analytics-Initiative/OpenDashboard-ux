@@ -34,7 +34,7 @@ function EventAliasManager({ match }) {
             list.push(resp);
             setList(list);
             setNewAlias({ ...defaultAlias });
-            location.reload();
+            window.location.reload();
         });
     };
 
@@ -45,7 +45,7 @@ function EventAliasManager({ match }) {
             const old = list[indexToUpdate];
             list[indexToUpdate] = { ...old, ...data };
             setList(list);
-            location.reload();
+            window.location.reload();
         })
     };
 
