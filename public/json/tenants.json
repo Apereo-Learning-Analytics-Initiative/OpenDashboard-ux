@@ -1676,13 +1676,31 @@
                 "Submitted": 142,
                 "Started": 84,
                 "NavigatedTo": 3593,
-                "Viewed": 4131
+                "Viewed": 4131,
+                "LoggedIn": 200,
+                "Completed": 200,
+                "Recommended": 200,
+                "Commented": 200,
+                "Bookmarked": 200,
+                "LoggedOut": 200,
+                "Searched": 200,
+                "Shared": 200
+                
+            
             },
             "eventTypeAverages": {
                 "Submitted": 5.461538461538462,
                 "Started": 3.230769230769231,
                 "NavigatedTo": 138.19230769230768,
-                "Viewed": 158.8846153846154
+                "Viewed": 158.8846153846154,
+                "LoggedIn": 200.0,
+                "Completed": 200.0,
+                "Recommended": 200.0,
+                "Commented": 200.0,
+                "Bookmarked": 200.0,
+                "LoggedOut": 200.0,
+                "Searched": 200.0,
+                "Shared": 200.0
             }
         }
     ]
