@@ -48,8 +48,5 @@ export function useTenantList() {
     return useFetch(useTenantsUrl(), { credentials: 'include' });
 }
 
-export function useTenantAliasList(id) {
-    return useFetch(useTenantAliasUrl(id), { credentials: 'include' })
-}
 
 export default { save, create, find };
