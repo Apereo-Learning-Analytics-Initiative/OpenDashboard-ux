@@ -31,7 +31,10 @@ export function ClassInfo() {
 
     return (
         <React.Fragment>
-            <h2 className="h4 mb-4">{selected.label}</h2>
+            <h2 className="h4 mb-4">
+                <b>{selected.label}</b>&nbsp; - &nbsp;
+                {selected.students.length} students
+            </h2>
             <div className="d-flex justify-content-between info-boxes class-info-boxes flex-lg-row flex-sm-column">
                 <div className="d-flex bg-dark text-light flex-fill">
                     <div className="p-4 d-flex flex-column align-items-center flex-fill">
@@ -44,16 +47,13 @@ export function ClassInfo() {
                     </div>
                 </div>
                 <div className="d-flex text-light flex-fill my-sm-4 my-lg-0 mx-lg-4">
-                    <div className="bg-success p-4 d-flex flex-column align-items-center flex-fill">
-                        <div className="h2">{selected.students.length}</div>
-                        <div className="text-uppercase small">Students</div>
-                    </div>
                     { studentsAtRisk !== null ?
                     <div className="bg-warning p-4 d-flex flex-column align-items-center flex-fill">
-                        <div className="h2">{studentsAtRisk}</div>
+                        <div className="h2"><i className="fa-facebook"></i> {studentsAtRisk}</div>
                         <div className="text-uppercase small">At Risk</div>
                     </div>
                     : ''}
+
                 </div>
                 <div className="d-flex bg-dark text-light flex-fill">
                     <div className="p-4 d-flex flex-column align-items-center flex-fill">
