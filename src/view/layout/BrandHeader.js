@@ -1,3 +1,9 @@
+/**
+ * @author xchopin <bonjour@chopin.us>
+ * @author scody
+ */
+
+
 import React, { useState } from 'react';
 import {
     Navbar,
@@ -24,14 +30,14 @@ export function BrandHeader() {
         <div>
             <header>
             <Navbar light color="white"  expand="md">
-                <NavbarBrand className="brand" tag={Link} to={'/'} >
+                <NavbarBrand className="brand"  >
                     <img alt="logo" className="app-logo" src={config.logo.imagePath}></img>
                     <span className="brand-name">Student Success Dashboard</span>
                 </NavbarBrand>
                 <NavbarToggler onClick={toggleNavbar} className="mr-2"  />
                 <Collapse isOpen={!collapsed} navbar >
                     <Nav className="mr-auto " navbar >
-                        <NavItem right>
+                        <NavItem>
                             <NavLink href="">Item</NavLink>
                         </NavItem>
                         <UncontrolledDropdown nav inNavbar>
