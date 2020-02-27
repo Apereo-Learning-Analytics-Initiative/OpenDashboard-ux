@@ -1,5 +1,7 @@
 # OpenDashboard UX
 
+<img src='.github/preview.JPG'/>
+
 ## Required
 
 -  [npm](https://www.npmjs.com/) ^6.10.2
