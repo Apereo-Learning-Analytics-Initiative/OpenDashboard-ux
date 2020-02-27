@@ -90,9 +90,9 @@ function EventAliasManager({ match }) {
     };
 
 
-    const showEditForm = (itemId) => {
+    const showEditForm = (itemId, itemName) => {
         const body = <EditAlias onSubmit={ updateAlias }  data={ list.find(a => a.id === itemId) } />
-        showModal('Edit "' + itemId + '"' , body);
+        showModal('Edit "' + itemName + '" event alias' , body);
     };
 
 
@@ -142,7 +142,7 @@ function EventAliasManager({ match }) {
                                         :
                                         <FontAwesomeIcon color='red' icon={faTimes}></FontAwesomeIcon> }</td>
                                 <td>
-                                    <button className="btn btn-lg btn-primary btn-sm" onClick={ () => showEditForm(item.id)}>
+                                    <button className="btn btn-lg btn-primary btn-sm" onClick={ () => showEditForm(item.id, item.verb)}>
                                         <FontAwesomeIcon icon={faPen}></FontAwesomeIcon> &nbsp;
                                         Edit
                                     </button> &nbsp;
