@@ -1,3 +1,13 @@
+/**
+ * @author xchopin <bonjour@chopin.us>
+ * @author scody
+ */
+
+
+import useFetch from 'fetch-suspense';
+
+import { useTenantUrl, useTenantsUrl, useTenantAliasUrl } from '../shared/path';
+
 export function update(url, data) {
     return fetch(
         url,
@@ -41,4 +51,8 @@ export function remove(url, data) {
             }
         }
     ).then(resp => resp.json());
+}
+
+export function useFindAll(tenantId) {
+    return useFetch(useTenantAliasUrl(tenantId), { credentials: 'include' })
 }

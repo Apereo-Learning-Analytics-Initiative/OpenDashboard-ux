@@ -21,7 +21,6 @@ function App() {
         <React.Suspense fallback={<Spinner />}>
             <AppProviders>
                 <Startup />
-                <Notifications />
             </AppProviders>
         </React.Suspense>
     );

@@ -3,23 +3,17 @@
 @import './theme/override';
 @import './theme/bootstrap';
 @import './theme/charts';
+@import './theme/header';
+
 
 body {
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 
     height: 100vh;
-    padding-top: 73px;
 }
 
 /* NEW SKIN */
 
-.header, .footer {
-    &.brand-header {
-        background: $header-bg-color;
-    }
-
+.footer {
     &.brand-footer {
         background: $footer-bg-color;
         color: $footer-text-color;
@@ -34,10 +28,9 @@ body {
     max-width: 90%;
 }
 
-.app-logo {
-    width: auto;
-    height: 40px;
-}
+
+
+
 
 .btn-text {
     display: inline;
@@ -49,6 +42,15 @@ body {
     &:focus {
         outline: 0;
     }
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+
+    border-left: 60px solid green;
 }
 
 .badge-lg {
@@ -150,7 +152,7 @@ i.glyphicon { display: none; }
 
 
 .login-view {
-    background: url(/images/stairs-people-sitting-architecture.jpg) no-repeat center center fixed;
+    background: url(/images/background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

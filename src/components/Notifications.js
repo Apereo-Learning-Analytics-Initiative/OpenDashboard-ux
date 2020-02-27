@@ -1,31 +1,31 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import { useNotifications, NotificationContext, actions as NotificationActions } from '../context/Notification';
-import { UncontrolledAlert } from 'reactstrap';
+import { Alert, UncontrolledAlert } from 'reactstrap';
 
 export function Notification ({ config }) {
     const { type, body, duration, id } = config;
     const { dispatch } = React.useContext(NotificationContext);
 
-    setTimeout(() => dispatch({ type: NotificationActions.REMOVE_NOTIFICATION, payload: id }), duration);
+    const [visible, setVisible] = useState(true);
+    const onDismiss = () => setVisible(false);
+
+    // setTimeout(() => dispatch({ type: NotificationActions.REMOVE_NOTIFICATION, payload: id }), duration);
 
     return (
-        <UncontrolledAlert color={type} className="my-2">
-            {body}
-        </UncontrolledAlert>
+        <Alert color={type} isOpen={visible} toggle={onDismiss}> {body} </Alert>
     );
 }
 
 export function Notifications () {
     const notifications = useNotifications();
-
+    const [visible, setVisible] = useState(true);
+    const onDismiss = () => setVisible(false);
     return (
-        <div className="position-fixed notification-list p-4 fixed-top d-flex justify-content-center">
-            <div className="w-25">
+        <div>
                 {notifications.map((n) =>
                     <Notification key={n.id} config={n} />
                 )}
-            </div>
         </div>
     );
 }

@@ -1,12 +1,16 @@
-import React from 'react';
-import { withRouter } from 'react-router-dom';
-import SchemaFormCard from '../../../components/form/SchemaFormCard';
-import { useEventAliasSchema } from '../../../shared/path';
+/**
+ * @author xchopin <bonjour@chopin.us>
+ * @author scody
+ */
 
-function AliasForm({ data, title, onSubmit, ...props }) {
+import React, {useState} from 'react';
+import { withRouter } from 'react-router-dom';
+import { useEventAliasSchema } from '../../../shared/path';
+import SchemaForm from "../../../components/form/SchemaForm";
+
+function AliasForm({data, title, onSubmit, ...props }) {
 
     const schema = useEventAliasSchema();
-    
     const uiSchema = {
         display: {
             'ui:widget': 'radio'
@@ -16,8 +20,10 @@ function AliasForm({ data, title, onSubmit, ...props }) {
         }
     };
 
+
+
     return (
-        <SchemaFormCard
+        <SchemaForm
             data={ data }
             className="w-100"
             title={ `${title ? title : 'Add Alias'}` }

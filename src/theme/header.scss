@@ -1,0 +1,35 @@
+@import 'palette';
+
+$header-bg-color: color(white);
+
+header {
+  .brand-header {
+    background: $header-bg-color;
+  }
+
+  .app-logo {
+    width: auto;
+    height: 40px;
+  }
+
+  .brand-name {
+    font-size: 0.7em;
+  }
+
+  .brand {
+    margin-right: 2.5em;
+  }
+
+  @media screen and (max-width: 650px) {
+    .app-logo {
+      display:none;
+    }
+
+
+  }
+
+}
+
+
+
+
