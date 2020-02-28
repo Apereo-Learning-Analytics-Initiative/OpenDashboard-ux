@@ -20,12 +20,26 @@ header {
     margin-right: 2.5em;
   }
 
+  .demo-mode {
+    background-color: #cd312e;
+    font-weight: bold;
+    color:white;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 0.3em;
+    z-index: 999;
+    @media screen and (max-width: 650px) {
+      right: 30%;
+      opacity: 0.8;
+
+    }
+  }
+
   @media screen and (max-width: 650px) {
     .app-logo {
       display:none;
     }
-
-
   }
 
 }
