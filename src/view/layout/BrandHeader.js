@@ -21,6 +21,8 @@ import {
 import { useAppConfig } from '../../shared/config';
 import {Link} from "react-router-dom";
 import {Notifications} from "../../components/Notifications";
+import InfoPopup from '../../components/InfoPopup';
+import { useTranslation } from '../../context/Translate';
 
 export function BrandHeader() {
     const config = useAppConfig();
@@ -30,7 +32,15 @@ export function BrandHeader() {
     return (
         <div>
             <header>
-                {DEV_MODE ? <span className='demo-mode'>DEMO MODE ENABLED</span> : ''}
+                {DEV_MODE ? 
+                <span className='demo-mode'>
+                
+                <InfoPopup 
+                        header={'Demo Mode'}
+                        body={'Demo Mode is currently enabled. To disable it, edit the file /shared/paths.js, set DEV_MODE==false to use the live data'}
+                />
+
+                DEMO MODE ENABLED</span> : ''}
 
                 <Navbar light color="white"  expand="md">
                     <NavbarBrand className="brand"  >
