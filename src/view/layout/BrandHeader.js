@@ -5,6 +5,7 @@
 
 
 import React, { useState } from 'react';
+import {DEV_MODE} from "../../shared/path";
 import {
     Navbar,
     Nav,
@@ -29,38 +30,43 @@ export function BrandHeader() {
     return (
         <div>
             <header>
-            <Navbar light color="white"  expand="md">
-                <NavbarBrand className="brand"  >
-                    <img alt="logo" className="app-logo" src={config.logo.imagePath}></img>
-                    <span className="brand-name">Student Success Dashboard</span>
-                </NavbarBrand>
-                <NavbarToggler onClick={toggleNavbar} className="mr-2"  />
-                <Collapse isOpen={!collapsed} navbar >
-                    <Nav className="mr-auto " navbar >
-                        <NavItem>
-                            <NavLink href="">Item</NavLink>
-                        </NavItem>
-                        <UncontrolledDropdown nav inNavbar>
-                            <DropdownToggle nav caret>
-                                Options
-                            </DropdownToggle>
-                            <DropdownMenu right>
-                                <DropdownItem>
-                                    Option 1
-                                </DropdownItem>
-                                <DropdownItem>
-                                    Option 2
-                                </DropdownItem>
-                                <DropdownItem divider />
-                                <DropdownItem>
-                                    Example
-                                </DropdownItem>
-                            </DropdownMenu>
-                        </UncontrolledDropdown>
-                    </Nav>
-                </Collapse>
-            </Navbar>
-        </header>
+                {DEV_MODE ? <span className='demo-mode'>DEMO MODE ENABLED</span> : ''}
+
+                <Navbar light color="white"  expand="md">
+                    <NavbarBrand className="brand"  >
+                        <img alt="logo" className="app-logo" src={config.logo.imagePath}></img>
+                        <span className="brand-name">Student Success Dashboard</span>
+                    </NavbarBrand>
+                    <NavbarToggler onClick={toggleNavbar} className="mr-2"  />
+                    <Collapse isOpen={!collapsed} navbar >
+                        <Nav className="mr-auto " navbar >
+                            <NavItem>
+                                <NavLink href="">Item</NavLink>
+                            </NavItem>
+
+                            <UncontrolledDropdown nav inNavbar>
+                                <DropdownToggle nav caret>
+                                    Options
+                                </DropdownToggle>
+                                <DropdownMenu right>
+                                    <DropdownItem>
+                                        Option 1
+                                    </DropdownItem>
+                                    <DropdownItem>
+                                        Option 2
+                                    </DropdownItem>
+                                    <DropdownItem divider />
+                                    <DropdownItem>
+                                        Example
+                                    </DropdownItem>
+                                </DropdownMenu>
+                            </UncontrolledDropdown>
+
+                        </Nav>
+                    </Collapse>
+                </Navbar>
+
+            </header>
             <Notifications />
         </div>
     );
