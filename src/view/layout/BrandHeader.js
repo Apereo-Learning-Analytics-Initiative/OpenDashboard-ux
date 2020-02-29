@@ -39,7 +39,7 @@ export function BrandHeader() {
                         header={'Demo Mode'}
                         body={'Demo Mode is currently enabled. To disable it, edit the file /shared/paths.js, set DEV_MODE==false to use the live data'}
                 />
-
+                &nbsp; 
                 DEMO MODE ENABLED</span> : ''}
 
                 <Navbar light color="white"  expand="md">

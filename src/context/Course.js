@@ -180,18 +180,18 @@ export function useStudentFirstEventDate(events) {
     return moment(d).valueOf();
 }
 
-/*export function useStudentLastEventDate(events) {
+export function useStudentLastEventDate(events) {
     const sorted = sortBy(events, 'timestamp');
     const selectedClass = useSelectedClass();
     const classEnd = getMoment(selectedClass.enddate);
     const lastEventDate = sorted.length ? sorted[sorted.length - 1].timestamp : moment();
     const d = classEnd.isAfter(lastEventDate) ? classEnd : lastEventDate;
     return moment(d).valueOf();
-}*/
+}
 
-export function useStudentLastEventDate(events) {
+/*export function useStudentLastEventDate(events) {
     const today = moment().toObject();
     const { years, months, date } = today;
 
     return moment({ years, months, date }).valueOf();
-}
+}*/
