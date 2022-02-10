@@ -16,7 +16,7 @@
     "moize": "^5.4.4",
     "moment": "^2.24.0",
     "moment-range": "^4.0.2",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "prop-types": "^15.7.2",
     "qs": "^6.9.1",
     "rc-slider": "^8.7.1",
