@@ -11,7 +11,7 @@
     "chart.js": "^2.9.3",
     "d3": "^5.14.2",
     "fetch-suspense": "^1.2.1",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "lodash": "^4.17.15",
     "moize": "^5.4.4",
     "moment": "^2.24.0",
